@@ -59,8 +59,6 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute) #attrs possess key and value pairs
-    key = 
-    value =
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
