@@ -60,9 +60,7 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute) #attrs possess key and value pairs
-    sql = "SELECT *
-      FROM #{self.table_name}
-      WHERE #{attribute.keys[0]} = '#{attribute.values[0]}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0]} = '#{attribute.values[0]}'"
     DB[:conn].execute(sql)
   end
 end
