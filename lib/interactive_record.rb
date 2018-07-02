@@ -60,7 +60,7 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute) #attrs possess key and value pairs
-    binding.pry
+  #  binding.pry
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
